@@ -41,8 +41,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Signika";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -526,27 +526,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E8%B0%93%E8%AF%8D%E4%B8%8E%E9%87%8F%E8%AF%8D/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    谓词与量词
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -744,9 +723,10 @@ $$
 P(x_1,x_2,\cdots,x_n)
 $$
 形式为 <span class="arithmatex">\(P(x_1,x_2,\cdots,x_n)\)</span> 的语句是命题函数 <span class="arithmatex">\(P\)</span> 在" <span class="arithmatex">\(n\)</span> 元组 <span class="arithmatex">\((x_1,x_2,\cdots,x_n)\)</span> 的值，<span class="arithmatex">\(P\)</span> 也称为“ <span class="arithmatex">\(n\)</span> 位谓词"或"<span class="arithmatex">\(n\)</span>元谓词".</p>
-<blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>描述合法输入的语句叫做<strong>前置条件</strong>，而程序运行的输出应该满足的条件称为<strong>后置条件</strong>.</p>
-</blockquote>
+</div>
 <h2 id="_2">量词</h2>
 <blockquote>
 <p>处理谓词和量词的逻辑领域称为<strong>谓词演算</strong>。</p>
@@ -765,21 +745,33 @@ $$
 论域中存在一个x满足P(x)
 $$
 符号<span class="arithmatex">\(\exists xP(x)\)</span>表示<span class="arithmatex">\(P(x)\)</span>的全称量化,其中<span class="arithmatex">\(\exists\)</span>称为<strong>存在量词</strong>.</p>
-<blockquote>
+<div class="admonition not">
+<p class="admonition-title">存在量词的其他表示方法</p>
 <p>“对某些”,“至少有一个”或“有”;
 存在量词可读做 “有一个<span class="arithmatex">\(x\)</span>满足<span class="arithmatex">\(P(x)\)</span>” “至少有一个<span class="arithmatex">\(x\)</span>满足<span class="arithmatex">\(P(x)\)</span>” 或 “对某个<span class="arithmatex">\(x\)</span>，<span class="arithmatex">\(P(x)\)</span>".</p>
-</blockquote>
+</div>
 <div class="arithmatex">\[\begin{aligned}
 \forall P(x)&amp;\equiv P(x_1)\wedge P(x_2)\wedge\cdots\wedge P(x_n)\\
 \exists P(x)&amp;\equiv P(x_1)\vee P(x_2)\vee\cdots\vee P(x_n)
 \end{aligned}\]</div>
-<p><strong>例1</strong>如果<span class="arithmatex">\(P(x)\)</span>是语句“<span class="arithmatex">\(x&gt;10\)</span>”，论域为不超过4的正整数，则<span class="arithmatex">\(\exists P(x)\)</span>的真值是什么？
-<strong>解:</strong>
+<div class="admonition question">
+<p class="admonition-title">例1</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">问题</label><label for="__tabbed_1_2">解答</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>例1</strong>如果<span class="arithmatex">\(P(x)\)</span>是语句“<span class="arithmatex">\(x&gt;10\)</span>”，论域为不超过4的正整数，则<span class="arithmatex">\(\exists P(x)\)</span>的真值是什么</p>
+</div>
+<div class="tabbed-block">
+<p><strong>解:</strong>
 论域为<span class="arithmatex">\(\{1,2,3,4\}\)</span>,则
 $$
 \exists P(x)\equiv P(1)\vee P(2)\vee P(3)\vee P(4)
 $$
 因为<span class="arithmatex">\(P(4)=4^2&gt;10\)</span>,所以<span class="arithmatex">\(\exists P(x)\)</span>为假.</p>
+</div>
+</div>
+</div>
+</div>
 <h4 id="_5">唯一性量词</h4>
 <p>用符号<span class="arithmatex">\(\exists!\)</span>或<span class="arithmatex">\(\exists_1\)</span>表示唯一性量词,这种表示法是指“存在一个唯一的<span class="arithmatex">\(x\)</span>使得<span class="arithmatex">\(P(x)\)</span>为真”。</p>
 <h4 id="_6">优先级</h4>
